@@ -1,5 +1,5 @@
 export class PagesConfig {
-  static HOME = '/'
-  static MARKET = '/market'
-  static WISHLIST = '/wishlist'
+	static HOME = '/'
+	static DASHBOARD = '/dashboard'
+	static WISHLIST = '/wishlist'
 }

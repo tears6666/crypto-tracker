@@ -1,19 +1,20 @@
-import { PagesConfig } from '../config/pages.config';
+import { PagesConfig } from '@/config/pages.config'
+import type { IOverMenuItems } from '@/types/menu.types'
 
-export const MENU_ITEMS = [
-  {
-    id: 1,
-    text: 'Home',
-    link: PagesConfig.HOME
-  },
-  {
-    id: 2,
-    text: 'Market',
-    link: PagesConfig.MARKET
-  },
-  {
-    id: 3,
-    text: 'Wishlist',
-    link: PagesConfig.WISHLIST
-  }
+export const OVERVIEW_MENU_ITEMS: IOverMenuItems[] = [
+	{
+		id: 1,
+		text: 'Home',
+		link: PagesConfig.HOME,
+	},
+	{
+		id: 2,
+		text: 'Dashboard',
+		link: PagesConfig.DASHBOARD,
+	},
+	{
+		id: 3,
+		text: 'Wishlist',
+		link: PagesConfig.WISHLIST,
+	},
 ]

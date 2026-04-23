@@ -1,4 +1,6 @@
 import { Sparkles } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
+import { OVERVIEW_MENU_ITEMS } from '@/data/menu.data'
 
 export function LeftSidebar() {
 	return (
@@ -9,6 +11,28 @@ export function LeftSidebar() {
 				</div>
 				<div className='text-sm font-semibold tracking-wide'>Crypture</div>
 			</div>
+			<nav className='mt-5 flex flex-col gap-3'>
+				<p className='text-neutral-700 text-[16px]'>Overview</p>
+				{OVERVIEW_MENU_ITEMS.map(item => (
+					<NavLink
+						key={item.id}
+						to={item.link}
+						className={({ isActive }) =>
+							[
+								'no-underline outline-none',
+								'flex items-center gap-3 rounded-xl px-3 py-2 text-sm transition',
+								'focus-visible:ring-2 focus-visible:ring-white/25 focus-visible:ring-offset-4 focus-visible:ring-offset-black/40',
+								'active:opacity-90',
+								isActive
+									? 'border border-(--border) bg-white/8 text-white'
+									: 'text-white/70 visited:text-white/70 hover:bg-white/6 hover:text-white',
+							].join(' ')
+						}
+					>
+						{item.text}
+					</NavLink>
+				))}
+			</nav>
 		</aside>
 	)
 }
