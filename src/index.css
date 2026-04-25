@@ -15,8 +15,15 @@ body,
 #root {
   height: 100%;
 }
-
+::-webkit-scrollbar{
+  width: 3px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: white;
+}
 body {
   background: var(--app-bg);
   color: var(--text);
+  overflow: hidden;
+  scroll-behavior: smooth;
 }

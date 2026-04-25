@@ -9,12 +9,12 @@ export const OVERVIEW_MENU_ITEMS: IOverMenuItems[] = [
 	},
 	{
 		id: 2,
-		text: 'Dashboard',
+		text: 'Market',
 		link: PagesConfig.DASHBOARD,
 	},
 	{
 		id: 3,
-		text: 'Wishlist',
+		text: 'Favorites',
 		link: PagesConfig.WISHLIST,
 	},
 ]

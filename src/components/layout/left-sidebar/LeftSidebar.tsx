@@ -1,6 +1,6 @@
+import { OVERVIEW_MENU_ITEMS } from '@/data/menu.data'
 import { Sparkles } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
-import { OVERVIEW_MENU_ITEMS } from '@/data/menu.data'
 
 export function LeftSidebar() {
 	return (
@@ -9,7 +9,9 @@ export function LeftSidebar() {
 				<div className='grid size-9 place-items-center rounded-xl bg-white/10'>
 					<Sparkles className='size-5 text-white/90' />
 				</div>
-				<div className='text-sm font-semibold tracking-wide'>Crypture</div>
+				<div className='text-sm font-semibold tracking-wide'>
+					Crypto-Tracker
+				</div>
 			</div>
 			<nav className='mt-5 flex flex-col gap-3'>
 				<p className='text-neutral-700 text-[16px]'>Overview</p>
